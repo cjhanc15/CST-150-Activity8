@@ -18,11 +18,13 @@ namespace CST_150_Activity8
             InitializeComponent();
         }
 
+        //convert grams of fat to calories
         public int FatCalories(int gramsFat)
         {
             return gramsFat * 9;
         }
 
+        //convert grams of carbs to calories
         public int CarbCalories(int gramsCarbs)
         {
             return gramsCarbs * 4;
@@ -36,6 +38,7 @@ namespace CST_150_Activity8
             Boolean validGramsFat = int.TryParse(fatGrams.Text, out convertedGramsFat) && convertedGramsFat > -1;
             Boolean validGramsCarbs = int.TryParse(carbGrams.Text, out convertedGramsCarbs) && convertedGramsCarbs > -1;
 
+            //if gramsFat and gramsCarbs are above -1 and an integer, calculate results
             if(validGramsFat && validGramsCarbs)
             {
                 gramsFatError.Text = "";
@@ -46,6 +49,7 @@ namespace CST_150_Activity8
                 totalCals.Text = (FatCalories(convertedGramsFat) + CarbCalories(convertedGramsCarbs)).ToString();
             }
 
+            //if gramsFat is not valid, display error, set all cals to blank
             if (!validGramsFat)
             {
                 gramsFatError.Text = "ERROR: Please enter valid number of fat";
@@ -53,6 +57,9 @@ namespace CST_150_Activity8
                 carbCals.Text = "";
                 totalCals.Text = "";
             }
+            //if gramsFat is valid, ensure error is blank
+            else if (validGramsFat) gramsFatError.Text = "";
+            //if gramsCarbs is not valid, display error, set all cals to blank
             if (!validGramsCarbs)
             {
                 gramsCarbsError.Text = "ERROR: Please enter valid number of carbs";
@@ -60,6 +67,8 @@ namespace CST_150_Activity8
                 carbCals.Text = "";
                 totalCals.Text = "";
             }
+            //if gramsCarbs is valid, set error to blank
+            else if (validGramsCarbs) gramsCarbsError.Text = "";
         }
     }
 }
