@@ -46,8 +46,20 @@ namespace CST_150_Activity8
                 totalCals.Text = (FatCalories(convertedGramsFat) + CarbCalories(convertedGramsCarbs)).ToString();
             }
 
-            if(!validGramsFat) gramsFatError.Text = "ERROR: Please enter valid number of fat";
-            if (!validGramsCarbs) gramsCarbsError.Text = "ERROR: Please enter valid number of carbs";
+            if (!validGramsFat)
+            {
+                gramsFatError.Text = "ERROR: Please enter valid number of fat";
+                fatCals.Text = "";
+                carbCals.Text = "";
+                totalCals.Text = "";
+            }
+            if (!validGramsCarbs)
+            {
+                gramsCarbsError.Text = "ERROR: Please enter valid number of carbs";
+                fatCals.Text = "";
+                carbCals.Text = "";
+                totalCals.Text = "";
+            }
         }
     }
 }
