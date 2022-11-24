@@ -16,5 +16,10 @@ namespace CST_150_Activity8
         {
             InitializeComponent();
         }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
