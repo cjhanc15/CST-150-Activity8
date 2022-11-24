@@ -33,8 +33,8 @@ namespace CST_150_Activity8
             int convertedGramsFat;
             int convertedGramsCarbs;
 
-            Boolean validGramsFat = int.TryParse(fatGrams.Text, out convertedGramsFat);
-            Boolean validGramsCarbs = int.TryParse(carbGrams.Text, out convertedGramsCarbs);
+            Boolean validGramsFat = int.TryParse(fatGrams.Text, out convertedGramsFat) && convertedGramsFat > -1;
+            Boolean validGramsCarbs = int.TryParse(carbGrams.Text, out convertedGramsCarbs) && convertedGramsCarbs > -1;
 
             if(validGramsFat && validGramsCarbs)
             {

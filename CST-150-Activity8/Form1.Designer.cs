@@ -146,9 +146,10 @@
             // calculateButton
             // 
             this.calculateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(60)))), ((int)(((byte)(64)))));
+            this.calculateButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.calculateButton.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(239)))), ((int)(((byte)(224)))));
-            this.calculateButton.Location = new System.Drawing.Point(876, 487);
+            this.calculateButton.Location = new System.Drawing.Point(904, 486);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(303, 88);
             this.calculateButton.TabIndex = 9;
