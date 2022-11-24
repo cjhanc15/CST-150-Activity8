@@ -20,4 +20,4 @@
 - Please enter a valid positive integer(0 is acceptable).
 <img width="1035" alt="Screenshot 2022-11-23 at 11 59 29 PM" src="https://user-images.githubusercontent.com/102087890/203716539-6b9ba788-2718-4935-a332-201a4a3212ae.png">
 
-## Video Walkthrough:
+## Video Walkthrough: https://www.loom.com/share/bba7140dbbdb4ecc828ce7390c854ea7 
