@@ -168,7 +168,7 @@
             // totalCals
             // 
             this.totalCals.AutoSize = true;
-            this.totalCals.Font = new System.Drawing.Font("Myanmar Text", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalCals.Font = new System.Drawing.Font("Myanmar Text", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalCals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(163)))), ((int)(((byte)(159)))));
             this.totalCals.Location = new System.Drawing.Point(1071, 891);
             this.totalCals.Name = "totalCals";
