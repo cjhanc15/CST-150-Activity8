@@ -41,6 +41,8 @@
             this.calculateButton = new System.Windows.Forms.Button();
             this.totalCaloriesLabel = new System.Windows.Forms.Label();
             this.totalCals = new System.Windows.Forms.Label();
+            this.gramsFatError = new System.Windows.Forms.Label();
+            this.gramsCarbsError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
@@ -176,12 +178,36 @@
             this.totalCals.TabIndex = 11;
             this.totalCals.Text = " ";
             // 
+            // gramsFatError
+            // 
+            this.gramsFatError.AutoSize = true;
+            this.gramsFatError.Font = new System.Drawing.Font("Myanmar Text", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gramsFatError.ForeColor = System.Drawing.Color.IndianRed;
+            this.gramsFatError.Location = new System.Drawing.Point(767, 423);
+            this.gramsFatError.Name = "gramsFatError";
+            this.gramsFatError.Size = new System.Drawing.Size(27, 48);
+            this.gramsFatError.TabIndex = 12;
+            this.gramsFatError.Text = " ";
+            // 
+            // gramsCarbsError
+            // 
+            this.gramsCarbsError.AutoSize = true;
+            this.gramsCarbsError.Font = new System.Drawing.Font("Myanmar Text", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gramsCarbsError.ForeColor = System.Drawing.Color.IndianRed;
+            this.gramsCarbsError.Location = new System.Drawing.Point(1407, 423);
+            this.gramsCarbsError.Name = "gramsCarbsError";
+            this.gramsCarbsError.Size = new System.Drawing.Size(27, 48);
+            this.gramsCarbsError.TabIndex = 13;
+            this.gramsCarbsError.Text = " ";
+            // 
             // calorieConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(2116, 1109);
+            this.Controls.Add(this.gramsCarbsError);
+            this.Controls.Add(this.gramsFatError);
             this.Controls.Add(this.totalCals);
             this.Controls.Add(this.totalCaloriesLabel);
             this.Controls.Add(this.calculateButton);
@@ -216,6 +242,8 @@
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Label totalCaloriesLabel;
         private System.Windows.Forms.Label totalCals;
+        private System.Windows.Forms.Label gramsFatError;
+        private System.Windows.Forms.Label gramsCarbsError;
     }
 }
 
